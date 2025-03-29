@@ -1,10 +1,10 @@
-/* 🏞️ Full-screen background with a soft blur effect */
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
   background: url("https://pimwp.s3-accelerate.amazonaws.com/2024/06/1Xs6Cnys-Untitled-design-18.jpg") no-repeat center center/cover;
-  backdrop-filter: blur(5px); /* Soft blur effect */
+  backdrop-filter: blur(5px); 
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,18 +17,16 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Adjust transparency (0 = full transparent, 1 = fully opaque) */
+  background: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
-
-/* 🎯 Centered Quiz Container */
 .quiz-container {
   width: 90%;
   max-width: 600px;
   padding: 30px;
-  background: rgba(0, 0, 0, 0.85); /* Dark translucent */
+  background: rgba(0, 0, 0, 0.85); 
   border-radius: 15px;
-  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5); /* Neon cyan glow */
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5); 
   color: aqua;
   text-align: center;
   display: flex;
@@ -36,14 +34,10 @@ body::before {
   align-items: center;
   animation: fadeIn 0.8s ease-in-out;
 }
-
-/* 🌀 Fade-in effect */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-/* 🚀 Progress Bar */
 .progress-bar {
   width: 100%;
   height: 12px;
@@ -58,23 +52,17 @@ body::before {
   transition: width 0.5s ease-in-out;
   border-radius: 6px;
 }
-
-/* ⏳ Timer */
 .timer {
   font-size: 22px;
   color: #ff4444;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
-/* 📝 Quiz Question */
 h2 {
   font-size: 26px;
   margin-bottom: 15px;
   color: #ffffff;
 }
-
-/* 🔘 Answer Buttons */
 .option-btn {
   display: block;
   width: 100%;
@@ -99,7 +87,7 @@ h2 {
   cursor: not-allowed;
 }
 
-/* ✅ Feedback Message */
+
 .feedback {
   font-size: 20px;
   font-weight: bold;
@@ -107,7 +95,7 @@ h2 {
   color: #ffcc00;
 }
 
-/* 🎮 Next and Restart Buttons */
+
 .next-btn, .restart-btn {
   padding: 15px 25px;
   background: #28a745;
@@ -125,7 +113,7 @@ h2 {
   transform: scale(1.1);
 }
 
-/* 🌟 Quiz End Screen */
+
 .quiz-end {
   text-align: center;
   font-size: 24px;
@@ -133,7 +121,7 @@ h2 {
   animation: fadeIn 0.8s ease-in-out;
 }
 
-/* 📱 Mobile Responsiveness */
+
 @media (max-width: 768px) {
   .quiz-container {
     width: 95%;
@@ -155,7 +143,7 @@ h2 {
   }
 }
 
-/* 🔥 Heading with a cool effect */
+
 h1 {
   color: rgb(1, 103, 103);
   font-size: 50px;
